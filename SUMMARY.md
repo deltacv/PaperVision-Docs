@@ -15,6 +15,6 @@
 
 ## exporting
 
-* [Page 1](exporting/page-1.md)
+* [Export Options](exporting/export-options.md)
 * [Usage in FTC](exporting/usage-in-ftc.md)
 * [General-Purpose Usage](exporting/general-purpose-usage.md)
