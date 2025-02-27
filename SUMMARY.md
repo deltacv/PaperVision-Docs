@@ -11,7 +11,7 @@
 ## computer vision concepts
 
 * [Thresholding](computer-vision-concepts/thresholding.md)
-* [Page 2](computer-vision-concepts/page-2.md)
+* [Countours and Filtering](computer-vision-concepts/countours-and-filtering.md)
 
 ## exporting
 
