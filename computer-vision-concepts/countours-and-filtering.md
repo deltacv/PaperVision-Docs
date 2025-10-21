@@ -10,11 +10,11 @@ Once an object's boundary is defined as a contour, you can use that list of coor
 
 ### 1. Image Preparation (Creating the Binary Mask)
 
-Contour detection works best, and often exclusively, on a binary image (a black-and-white image where pixels are either 0 or 255). This step ensures the algorithm only sees two things: the object and the background.
+Contour detection works best, and often exclusively, on a **binary image** (_a black-and-white image where pixels are either 0 or 255_). This step ensures the algorithm only sees two things: **the object** and the **background**.
 
-* **Thresholding**: You first use a process like Thresholding to convert your original image (which may be color or grayscale) into a binary mask. This isolates the area of interest (which should be white) from the background (which should be black).
+You first use a process like "[Thresholding](thresholding.md)" to convert your original image (which may be color, or grayscale) into a binary mask. This isolates the area of interest (which should be white) from the background (which should be black).
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### 2. Contour Detection
 
@@ -24,7 +24,7 @@ The algorithm systematically scans the image, looking for a transition from a bl
 
 The output of this process is not an image; it is a mathematical list of (x, y) coordinates for every point along the boundary of the detected shape.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="462"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt="" width="462"><figcaption></figcaption></figure>
 
 ### 3. Post-Detection (Filtering and Analysis)
 
@@ -33,8 +33,12 @@ After detection, the list of contours is passed to the rest of your pipeline. Si
 * **Filtering**: You apply Filtering to eliminate unwanted contours based on criteria like area (to remove noise), aspect ratio (to identify specific shapes), or the number of vertices.
 * **Analysis**: The remaining, filtered contours are then used for analysis, such as calculating the object's area, finding its centroid (center point), or drawing a simple Bounding Box or Bounding Rotated Rectangle around it.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-### 4. Visualizing Results
+### 4. Final Result
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+We will learn how to draw shape outlines, such as this example, in the "[Overlaying](overlaying.md)" chapter.
+{% endhint %}

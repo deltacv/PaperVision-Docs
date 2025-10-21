@@ -1,8 +1,8 @@
 # Basics
 
-When creating a new project, it is recommended to go through the "Guided Tour" to learn the basics of using the PaperVision editor. Click on the "Guided Tour" button when the welcome dialog comes up;
+When creating a new project for the first time, it is recommended to go through the "Guided Tour" to learn the basics of using the PaperVision editor. Click on the "Guided Tour" button when the welcome dialog comes up;
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Welcome dialog featuring options to get started</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Welcome dialog featuring options to get started</p></figcaption></figure>
 
 In this guide, we'll go into detail through some key points that are mentioned on the Guided Tour.
 
@@ -12,9 +12,9 @@ The starting two nodes when creating a new project serve as the entry point for 
 
 While developing, you can choose various "Input Sources" to feed your pipeline with, for ease of use. You can use any USB webcam plugged into your computer, while images, videos, and HTTP stream sources are available as well!
 
-The "Pipeline Output", as the name implies, helps you being able to visualize the result of your processing. Any image passed onto the output parameter will be promptly displayed when previewing the pipeline.
+The "Pipeline Output", as the name implies, helps you to visualize the result of your processing. Any image passed onto the output parameter will be promptly displayed when previewing the pipeline.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Adding more nodes
 
@@ -45,11 +45,11 @@ When the connection is valid, the nodes will link together, allowing the data to
 
 For your pipeline to run successfully, data must flow seamlessly from the input all the way through to the output, and all processing steps must be properly configured. A valid and complete pipeline will always follow this pattern:
 
-1. Pipeline Input: All processes must start from the Pipeline Input node, which serves as the entry point for the image or video stream.
-2. Processing Chain: Intermediate processing nodes (like Color Threshold and Binary Mask) take data from a previous node's output and pass their processed result to the next node's input.
-3. Pipeline Output: The final node in your chain must connect its processed data to the Pipeline Output node. This teal-colored node is the exit point for the processed image, making it available for viewing in the preview window (the `Output` pin) or for exporting (the `Export Data` pin).
+1. **Pipeline Input**: All processes must start from the Pipeline Input node, which serves as the entry point for the image or video stream.
+2. **Processing Chain**: Intermediate processing nodes (like Color Threshold and Binary Mask) take data from a previous node's output and pass their processed result to the next node's input.
+3. **Pipeline Output**: The final node in your chain must connect its processed data to the Pipeline Output node. This teal-colored node is the exit point for the processed image, making it available for viewing in the preview window (the `Output` pin) or for exporting (the `Export Data` pin).
 
-{% hint style="info" %}
+{% hint style="danger" %}
 Crucially, ensure that all nodes in the chain have their required parameters connected.&#x20;
 {% endhint %}
 

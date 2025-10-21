@@ -20,16 +20,16 @@ $$
 
 The result is the original source image, but with everything outside the white area of the mask turned black.
 
-<figure><img src="../.gitbook/assets/masking example.gif" alt=""><figcaption><p>The 3 stages of processing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/masking example.gif" alt=""><figcaption><p>The 3 stages of processing: Original -> Mask -> Result</p></figcaption></figure>
 
 ### Masking in PaperVision
 
-In PaperVision, you will use the **Binary Mask Node** (found in the Image Processing category) to apply this operation.
+In **PaperVision**, you will use the **Binary Mask Node** (found in the Image Processing category) to apply this operation.
 
-The Binary Mask you use is typically the result of a Thresholding operation. For example:
+The **Binary Mask** you use is typically the result of a Thresholding operation. For example:
 
-1. You use a Threshold Node to turn a complex scene into a simple Binary Mask where your target object is white, and everything else is black.
-2. You pass the original, full-color image and the new Binary Mask into the Mask Node.
-3. The Mask Node outputs the original image, but only the object of interest remains in color; the rest of the image is blacked out.
+1. You use a **Threshold Node** to turn a complex scene into a simple Binary Mask where your target object is white, and everything else is black.
+2. You pass the **original, full-color image** and the new Binary Mask into the Mask Node.
+3. The Mask Node outputs the original image, but **only the object of interest** remains in color; the rest of the image is blacked out.
 
 <figure><img src="../.gitbook/assets/unnamed.png" alt=""><figcaption></figcaption></figure>

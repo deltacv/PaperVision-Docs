@@ -7,10 +7,10 @@ PaperVision is bundled inside [EOCV-Sim](https://app.gitbook.com/s/-Mj4bZXgCUnwO
 To download EOCV-Sim, [follow the steps in the documentation](https://app.gitbook.com/s/-Mj4bZXgCUnwOLKFxDRi/downloading-eocv-sim).
 
 {% hint style="info" %}
-### Locate to the PaperVision tab on the top right of EOCV-Sim to start making your own projects !
+### Locate to the PaperVision tab on the top right of EOCV-Sim to start making your own projects.
 {% endhint %}
 
-<div align="left"><figure><img src=".gitbook/assets/image (4) (1).png" alt="" width="274"><figcaption><p>PaperVision Tab in EOCV-Sim</p></figcaption></figure> <figure><img src=".gitbook/assets/image (3) (1).png" alt="" width="375"><figcaption><p>EOCV-SIm's welcome dialog featuring PaperVision</p></figcaption></figure></div>
+<div align="center" data-full-width="true"><figure><img src=".gitbook/assets/image (4) (1) (1).png" alt="" width="274"><figcaption><p>PaperVision Tab in EOCV-Sim</p></figcaption></figure> <figure><img src=".gitbook/assets/image (3) (1) (1).png" alt="" width="375"><figcaption><p>EOCV-SIm's welcome dialog featuring PaperVision</p></figcaption></figure></div>
 
 ## Running from Gradle (development and testing)
 

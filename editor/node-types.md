@@ -1,6 +1,6 @@
 # Node Types
 
-The power of PaperVision lies in its organized and color-coded system for building computer vision pipelines. To help you quickly find the specific block of functionality you need, every node is assigned to a distinct Category, visually identifiable by its title bar color. Understanding these categories will make building, debugging, and expanding your visual program much faster and more intuitive.
+The power of **PaperVision** lies in its organized and color-coded system for building computer vision pipelines. To help you quickly find the specific block of functionality you need, every node is assigned to a distinct **category**, visually identifiable by its **title bar color**. Understanding these categories will make building, debugging, and expanding your visual program much faster and more intuitive.
 
 | Category Name              | Node Color | Purpose                                                                                     | Examples                                                                          |
 | -------------------------- | ---------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -14,8 +14,12 @@ The power of PaperVision lies in its organized and color-coded system for buildi
 
 While nodes perform the work, the pins on their edges manage the flow of information. Understanding pin types is essential for building a valid pipeline:
 
-* Inputs (Left Side): These pins accept data from other nodes. A node may have multiple inputs for different types of data (e.g., one for the image, one for a number).
-* Outputs (Right Side): These pins release the result of the node's function.
-* Data Typing: Every pin is strongly typed and color-coded. For example, an output pin that provides an image (often with a small image icon) can only be connected to an input pin that is expecting an image. You cannot connect an image output to a numeric input.
+* **Inputs (Left Side)**: These pins accept data from other nodes. A node may have multiple inputs for different types of data (e.g., one for the image, one for a number).
+* **Outputs (Right Side)**: These pins release the result of the node's function.
+* **Data Typing**: Every pin is _**strongly typed**_ and color-coded.&#x20;
+
+{% hint style="info" %}
+For example, an output pin that provides an image (often with a small image icon) can only be connected to an input pin that is expecting an image. You cannot connect an image output to a numeric input.
+{% endhint %}
 
 If you attempt to link two pins that carry incompatible data types, the connection will not be created, helping you prevent errors in your visual program.

@@ -9,7 +9,7 @@ The "threshold" is a specific brightness value (a number) that acts as the cutof
 * Pixels Brighter than the threshold value are turned white (255).
 * Pixels Darker than the threshold value are turned black (0).
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Example of a binary image</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Example of a binary image</p></figcaption></figure>
 
 This action dramatically simplifies an image, eliminating gray areas and leaving only the strongest contrasts.
 
@@ -28,12 +28,11 @@ For example, if you are looking for a bright white tennis ball against a dark gr
 In PaperVision, you use the Color Threshold node (found in the Image Processing category) to apply this technique. This node gives you powerful control:
 
 * Color Space: You can choose to apply the threshold to different color models like RGB or HSV. The HSV color space is often preferred for thresholding because it separates the color information (Hue and Saturation) from the brightness (Value), allowing you to filter by specific colors or light levels more effectively.
+* Channels: Unlike a simple grayscale threshold, the node allows you to set independent low and high threshold limits for each color channel (e.g., the Red channel, the Hue channel, etc.). This lets you target a very specific range of colors and brightness simultaneously.
 
 {% hint style="info" %}
-To gain a grasp of the different color space types, we recommend to go through [LearnOpenCV's guide on the topic](https://learnopencv.com/color-spaces-in-opencv-cpp-python/)
+To gain a grasp of the different color space types, including advantages and disadvantages, **we recommend to go through** [**LearnOpenCV's guide on the topic**](https://learnopencv.com/color-spaces-in-opencv-cpp-python/)
 {% endhint %}
-
-* Channels: Unlike a simple grayscale threshold, the node allows you to set independent low and high threshold limits for each color channel (e.g., the Red channel, the Hue channel, etc.). This lets you target a very specific range of colors and brightness simultaneously.
 
 By fine-tuning these ranges, you create a precise binary mask that highlights only the parts of the image you want the rest of your pipeline to analyze.
 
