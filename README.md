@@ -4,16 +4,18 @@ description: Introduction to PaperVision
 
 # Hello there!
 
-> **This documentation is a work in progress, new pages will be developed and added as time goes on**
+{% hint style="info" %}
+**This documentation is a work in progress, new pages will be developed and added as time goes on**
+{% endhint %}
 
-Thank you for you interest in PaperVision.&#x20;
+{% hint style="info" %}
+Please note that the software is under active, early development, and it is not yet as stable and reliable, there are recovery safe guards in place to prevent loss of project data but we still cannot ensure full stability. Make sure to report any issues in the [GitHub repository](https://github.com/deltacv/PaperVision/issues) or in the [Discord server](https://discord.gg/FQdAUzcb4e).
+{% endhint %}
 
-<figure><img src="https://raw.githubusercontent.com/deltacv/EOCV-Sim/refs/heads/main/EOCV-Sim/src/main/resources/images/papervision.gif" alt=""><figcaption></figcaption></figure>
-
-We made this tool in hopes that it will be useful for all FTC teams seeking a way of learning and developing their seasonal OpenCV algorithms in a visual and interactive way, while also providing some extra tools to improve the experience of developing such algorithms.
+Thank you for you interest in PaperVision !
 
 PaperVision is designed to make computer vision more accessible, whether you're just starting out or optimizing complex pipelines for competition. Inspired by node-based workflows in Blender and Unreal Engine Blueprints, it offers an intuitive drag-and-drop interface for building vision pipelines.
 
-Our mission is to streamline the process of designing, testing, and deploying OpenCV algorithms, so teams can focus on what matters most—bringing their vision-powered robotics ideas to life.
+<figure><img src="https://raw.githubusercontent.com/deltacv/EOCV-Sim/refs/heads/main/EOCV-Sim/src/main/resources/images/papervision.gif" alt=""><figcaption></figcaption></figure>
 
-> Please note that the software is under active, early development, and it is not yet as stable and reliable, there are recovery safe guards in place to prevent loss of project data but we still cannot ensure full stability. Make sure to report any issues in the GitHub repository or in the Discord server.
+We created this tool to support FTC teams in learning and developing their seasonal OpenCV algorithms in a visual and interactive way, while also streamlining the entire process of designing, testing, and deploying these algorithms—so teams can focus on what matters most: bringing their vision-powered robotics ideas to movement !
