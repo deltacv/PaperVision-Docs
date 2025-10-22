@@ -3,12 +3,12 @@
 * [Hello There!](README.md)
 * [Downloading PaperVision](downloading-papervision.md)
 
-## editor
+## Editor
 
 * [The Editor Basics](editor/the-editor-basics.md)
 * [Node Categories](editor/node-categories.md)
 
-## computer vision concepts
+## Computer Vision Concepts
 
 * [Thresholding](computer-vision-concepts/thresholding.md)
 * [Masking](computer-vision-concepts/masking.md)
