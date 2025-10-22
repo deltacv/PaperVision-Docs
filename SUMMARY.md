@@ -1,12 +1,12 @@
 # Table of contents
 
-* [Hello there!](README.md)
+* [Hello There!](README.md)
 * [Downloading PaperVision](downloading-papervision.md)
 
 ## editor
 
-* [Basics](editor/basics.md)
-* [Node Types](editor/node-types.md)
+* [The Editor Basics](editor/the-editor-basics.md)
+* [Node Categories](editor/node-categories.md)
 
 ## computer vision concepts
 

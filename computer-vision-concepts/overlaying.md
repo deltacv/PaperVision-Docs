@@ -13,8 +13,9 @@ Overlay nodes have a very specific structure and flow:
 3. **Drawing Parameters (How to Draw)**: You connect a Line Parameters Node to define the appearance of the drawing. This node specifies the color and thickness of the lines that will be drawn on the image.
 4. **Output**: The node outputs the image with the overlay elements now drawn on top
 
-| Draw Rectangles         | Draws axis-aligned bounding boxes around detected objects.     | List of `Rectangles`         |
+| Node                    | Purpose                                                        | Data Required                |
 | ----------------------- | -------------------------------------------------------------- | ---------------------------- |
+| Draw Rectangles         | Draws axis-aligned bounding boxes around detected objects.     | List of `Rectangles`         |
 | Draw Rotated Rectangles | Draws the snug-fitting, rotated boxes around detected objects. | List of `Rotated Rectangles` |
 | Draw Contours           | Draws the precise, raw boundary lines of the detected shapes.  | List of `Contours`           |
 | Draw Key Points         | Marks specific points found by feature detection algorithms.   | List of `Key Points`         |
@@ -28,7 +29,7 @@ The Line Parameters Node is a utility node found in the Overlay category whose s
 Drawing nodes like `Draw Rectangles` or `Draw Contours` don't contain any styling information themselves. Instead, they require the output of a Line Parameters Node to fill their `Parameters` input pin.
 
 {% hint style="info" %}
-You can easily create a "Line Parameters" node by clicking the pencil button that is available on any of the nodes that have such a parameter, instead of having to add manually!
+You can easily create a "Line Parameters" node by clicking the pencil button that is available on any of the nodes that have such a parameter, instead of having to add it manually!
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/line parameters.gif" alt="" width="477"><figcaption></figcaption></figure>
@@ -57,7 +58,7 @@ Another advantage of using "Line Parameters" is being able to share a single ins
 
 ### Default Line Color (Unlinked Parameters)
 
-The Drawing Nodes (like `Draw Rectangles`) are designed for quick visual feedback. When you look at the Parameters pin, you'll see a pencil icon next to it, which you can click to automatically link a  new Line Parameters node.
+The Drawing Nodes (like `Draw Rectangles`) are designed for quick visual feedback. When you look at the Parameters pin, you'll see a pencil icon next to it, which you can click to automatically link a new Line Parameters node.
 
 If you leave the Parameters pin unlinked to an external Line Parameters Node, the node uses its own default values. These are set to: $$Red=0$$, $$Blue=0$$, and $$Green=255$$.
 

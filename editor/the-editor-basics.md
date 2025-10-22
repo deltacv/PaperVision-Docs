@@ -1,4 +1,4 @@
-# Basics
+# The Editor Basics
 
 When creating a new project for the first time, it is recommended to go through the "Guided Tour" to learn the basics of using the PaperVision editor. Click on the "Guided Tour" button when the welcome dialog comes up;
 
@@ -16,13 +16,13 @@ The "Pipeline Output", as the name implies, helps you to visualize the result of
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Adding more nodes
+## Adding More Nodes
 
 <div align="left"><figure><img src="../.gitbook/assets/image (8).png" alt="" width="329"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 Click the **plus (+) button** or press the **SPACE** key to open the node library. Drag any node into your workspace to add new functionality to your pipeline. Use the **gear icon** for settings, the **play button** to run your pipeline, and the **code icon** to export your pipeline’s source code.
 
-## Making your first link
+## Making Your First Link
 
 <figure><img src="../.gitbook/assets/making a link.gif" alt="" width="331"><figcaption></figcaption></figure>
 
@@ -39,9 +39,46 @@ You can only link pins of the same type:
 
 When the connection is valid, the nodes will link together, allowing the data to flow from the output to the input.
 
-## Ensuring the node flow is _complete_ and _valid_
+## Running & Visualizing Your Pipeline
 
-<figure><img src="../.gitbook/assets/unnamed.png" alt="" width="563"><figcaption></figcaption></figure>
+#### Main Pipeline Output
+
+The most important node for visualization is the Pipeline Output node (found in the FLOW category).
+
+1. **Connect the Final Image**: Ensure the final processed image stream is connected to the Output pin of the **Pipeline Output** node.
+2. **Run the Pipeline**: Press the Play button in the bottom toolbar.
+
+The image connected to the Pipeline Output node will automatically be displayed as a live stream in the dedicated preview window (typically located on the top left of the workspace).
+
+<figure><img src="../.gitbook/assets/start previz.gif" alt="" width="317"><figcaption><p>Running the Pipeline and VIsualizing Output</p></figcaption></figure>
+
+#### Visualizing Intermediate Steps
+
+During development, you often need to check the image at an intermediate stage (e.g., to confirm your Color Threshold settings are correct before contour detection).
+
+* **Any output pin** that can be visualized (like image pins) has a small Pre-visualization (Previz) button next to it, it is typically represented with a clickable "**Eye**" button.
+* Click this button on the output pin of any node in the pipeline.
+
+<figure><img src="../.gitbook/assets/previz button.gif" alt="" width="317"><figcaption><p>Previsualizing Individual Nodes</p></figcaption></figure>
+
+#### Input Sources Menu
+
+The Input Sources menu is what you use to select the data feed for your entire pipeline. It appears specifically when you click the Play button in the toolbar to start processing.
+
+<figure><img src="../.gitbook/assets/image (18).png" alt="" width="352"><figcaption><p>Input Sources Menu</p></figcaption></figure>
+
+This menu is crucial because it allows you to choose exactly what feeds the initial Pipeline Input node:
+
+* Image Files: Static images (like PNGs or JPGs) are ideal for testing and debugging as they provide a consistent, unmoving image.
+* Live Camera Feeds: Any connected webcam (e.g., "Logi C270 HD WebCam") is available for live operation, processing a continuous video stream.
+
+{% hint style="info" %}
+You can add new sources by clicking the "Create new input source" button at the bottom of the menu.
+{% endhint %}
+
+## Ensuring the Node Flow is &#x43;_&#x6F;mplete_ and &#x56;_&#x61;lid_
+
+<figure><img src="../.gitbook/assets/unnamed.png" alt="" width="563"><figcaption><p>An Example of a Simple Pipeline</p></figcaption></figure>
 
 For your pipeline to run successfully, data must flow seamlessly from the input all the way through to the output, and all processing steps must be properly configured. A valid and complete pipeline will always follow this pattern:
 
@@ -50,7 +87,7 @@ For your pipeline to run successfully, data must flow seamlessly from the input 
 3. **Pipeline Output**: The final node in your chain must connect its processed data to the Pipeline Output node. This teal-colored node is the exit point for the processed image, making it available for viewing in the preview window (the `Output` pin) or for exporting (the `Export Data` pin).
 
 {% hint style="danger" %}
-Crucially, ensure that all nodes in the chain have their required parameters connected.&#x20;
+Crucially, ensure that all nodes in the chain have their **required** parameters connected.&#x20;
 {% endhint %}
 
 In the case of the Color Threshold node, this means the image data is connected to its `Input` pin, but it also means that the threshold values (R, G, B, A sliders) are set either manually or are connected to another node's output to control the processing logic. A node with an unconfigured or unlinked required parameter will stop the pipeline from functioning correctly.
