@@ -42,3 +42,6 @@ In Nearest mode, the node acts as a single-target selector.
 * **Result**: The output list (`Crosshair` pin) will contain only the **single object** that is closest to the crosshair.
 
 ### Crosshair in Action
+
+<figure><img src="../.gitbook/assets/crosshair .gif" alt="" width="272"><figcaption><p>Crosshair with the "Into the Deep" Samples</p></figcaption></figure>
+
